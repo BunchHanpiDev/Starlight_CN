@@ -718,3 +718,38 @@ body {
   background: rgba(211, 182, 94, .12);
   color: var(--secondary);
 }
+
+/* ===== 隐私政策：小标题与 GDPR 依据表 ===== */
+.policy h3 {
+  color: var(--onSurface);
+  font-size: 1rem;
+  margin: 1.5rem 0 .5rem;
+  padding-left: .6rem;
+  border-left: 3px solid rgba(211, 182, 94, .55);
+}
+.table-wrap {
+  overflow-x: auto;
+  margin: 1rem 0 1.2rem;
+  -webkit-overflow-scrolling: touch;
+}
+.policy-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .9rem;
+}
+.policy-table th,
+.policy-table td {
+  border: 1px solid rgba(211, 182, 94, .25);
+  padding: .6rem .85rem;
+  text-align: left;
+  vertical-align: top;
+}
+.policy-table th {
+  background: rgba(211, 182, 94, .12);
+  color: var(--secondary);
+  font-weight: 700;
+  white-space: nowrap;
+}
+.policy-table tbody tr:nth-child(even) td {
+  background: rgba(255, 255, 255, .025);
+}

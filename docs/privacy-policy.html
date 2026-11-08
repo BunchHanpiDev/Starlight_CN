@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>隐私政策 — 星光·Starlight</title>
-  <meta name="description" content="星光·Starlight 网站隐私政策：本站不收集个人信息，不含统计脚本与 Cookie。">
+  <meta name="description" content="星光·Starlight 隐私政策：说明使用本应用时个人数据如何被处理，依据 GDPR 及适用隐私法。">
   <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="starlight.css">
+  <link rel="stylesheet" href="starlight.css?v=20261108">
 </head>
 
 <body>
@@ -22,81 +22,189 @@
     <a class="back" href="index.html">← 返回首页</a>
 
     <h1>隐私政策</h1>
-    <p class="updated">最后更新：2026 年 11 月 8 日</p>
+    <p class="updated">生效日期：2026 年 9 月 18 日 · 中文版最后更新：2026 年 11 月 8 日</p>
 
     <p>
-      本政策说明「星光·Starlight」网站（下称"本站"）如何处理与访问者有关的信息。
-      简单说：<strong>本站是一个纯静态的介绍页面，不设账号、不收集个人信息、不做访问统计。</strong>
+      星光（Starlight，下称“本应用”“我们”）是一款 Android 应用，用于为用户安装 Among Us 的社区模组。
+      本隐私政策说明你在使用本应用时，个人数据如何被处理，依据《通用数据保护条例》（GDPR）及其他适用的隐私法律。
     </p>
 
-    <h2>1. 本站收集哪些信息</h2>
-    <p>不收集。具体来说，本站：</p>
+    <h2>1. 数据控制者</h2>
+    <p>负责处理你个人数据的数据控制者为：</p>
     <ul>
-      <li>没有注册、登录或任何表单，不需要你提交姓名、邮箱、手机号；</li>
-      <li>不设置 Cookie，不使用 localStorage 或类似机制保存你的信息；</li>
-      <li>不接入任何第三方统计、广告或用户画像脚本；</li>
-      <li>页面内的星空动画完全在浏览器本地绘制，不上传任何数据。</li>
+      <li><strong>All Of Us Mods</strong>（个人开发者）</li>
+      <li>联系方式：QQ 群 <strong>451561679</strong></li>
     </ul>
 
-    <h2>2. 托管服务与访问日志</h2>
+    <h2>2. 收集哪些数据</h2>
+
+    <h3>2.1 登录数据</h3>
+    <p>星光要求你登录后才能在 Among Us 中游玩，使用你现有的 Among Us 账号。我们支持以下登录方式：</p>
+    <ul>
+      <li>
+        <strong>Google 登录（主要方式）。</strong>当你使用 Google 登录时，我们会收到一个由 Google 签发的身份令牌，
+        用于确认你的 Google 账号身份。该令牌用于向 Among Us 的后端服务（由 Innersloth 及其游戏服务器合作方运营）验证你的身份，
+        以便你现有的 Among Us 账号、购买内容和外观可以在星光中使用。我们不会收到或保存你的 Google 密码，
+        也不会获得对你 Gmail、Drive 或其他 Google 数据的访问权限，仅限登录所需的基本身份确认。
+      </li>
+      <li>
+        <strong>itch.io OAuth（开发者／高级选项）。</strong>对于已将 Among Us 关联至 itch.io 账号的用户，
+        itch.io 登录作为次要的、面向开发者的选项保留。itch.io 提供的基本账号标识仅用于身份验证目的。
+      </li>
+    </ul>
+    <p>我们不运营自己的用户账号系统，也不保存任何登录方式的密码。</p>
+
+    <h3>2.2 游戏与联机数据</h3>
     <p>
-      本站托管在 <strong>GitHub Pages</strong>。与所有网站一样，托管方会在其服务器上记录访问日志
-      （通常包含 IP 地址、请求时间、浏览器类型与来源页面），用于安全防护和故障排查。
-      这部分数据由 GitHub 处理，适用
-      <a href="https://docs.github.com/zh/site-policy/privacy-policies/github-general-privacy-statement"
+      为了将你连接到 Among Us 的多人对局，星光会用你的登录令牌换取一个游戏身份验证令牌，
+      并将该令牌共享给多人服务器（Innersloth 官方服务器，或你选择的第三方服务器托管方），
+      以便服务器识别你的账号、匹配状态和游戏内权益（例如已拥有的外观）。
+    </p>
+
+    <h3>2.3 自动收集的数据</h3>
+    <p>使用本应用时，以下数据可能被处理：</p>
+    <ul>
+      <li>应用生成的匿名追踪标识符，仅用于统计内容下载次数</li>
+      <li>技术数据，例如应用版本、设备类型、操作系统版本</li>
+      <li>通过 Firebase Crashlytics 收集的崩溃与诊断数据</li>
+      <li>通过 Google AdMob 处理的广告标识符与交互数据</li>
+    </ul>
+    <p>该匿名追踪标识符在安装时生成，可通过清除应用数据重置，不与你的真实身份关联。</p>
+
+    <h2>3. 数据如何被收集</h2>
+    <p>数据在以下情形被收集：</p>
+    <ul>
+      <li>使用 Google 或 itch.io 登录时</li>
+      <li>使用本应用从我们的后端服务器下载模组内容时</li>
+      <li>使用本应用连接多人服务器时</li>
+      <li>在崩溃报告或诊断功能开启的情况下使用本应用时</li>
+      <li>查看或与广告互动时</li>
+    </ul>
+
+    <h2>4. 处理目的与法律依据</h2>
+    <div class="table-wrap">
+      <table class="policy-table">
+        <thead>
+          <tr><th>处理目的</th><th>法律依据（GDPR 第 6 条）</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Google／itch.io 登录与游戏身份验证</td><td>履行合同所必需（第 6(1)(b) 条）</td></tr>
+          <tr><td>内容分发与下载计数</td><td>正当利益（第 6(1)(f) 条）</td></tr>
+          <tr><td>崩溃报告与诊断</td><td>正当利益（第 6(1)(f) 条）</td></tr>
+          <tr><td>非个性化广告</td><td>正当利益（第 6(1)(f) 条）</td></tr>
+          <tr><td>个性化广告</td><td>同意（第 6(1)(a) 条）</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      应用内始终会展示广告。适用地区的用户会通过 Google 的用户消息平台（UMP）被请求同意，
+      以将个人数据用于个性化广告。
+    </p>
+    <p>
+      如果未授予同意或撤回同意，应用将继续展示<strong>非个性化广告</strong>。
+      你可以随时通过应用内的同意设置或相应的设备设置更改同意选择。
+    </p>
+
+    <h2>5. 第三方服务提供方</h2>
+
+    <h3>Google 登录</h3>
+    <p>星光使用 Google 登录对用户进行身份验证。Google 对你账号数据的处理受 Google 隐私政策约束。</p>
+
+    <h3>Google AdMob</h3>
+    <p>本应用使用 Google AdMob 展示广告，应用内始终会展示广告。</p>
+    <p>
+      根据你的同意选择，AdMob 可能处理设备标识符、IP 地址、交互数据等个人数据，以提供个性化广告。
+      如果未提供同意，则仅展示非个性化广告。
+    </p>
+    <p>个性化广告的同意通过 Google 的用户消息平台（UMP）管理。更多信息请参阅 Google 隐私政策。</p>
+
+    <h3>Firebase Crashlytics</h3>
+    <p>Firebase Crashlytics 用于收集崩溃报告与诊断数据，以改进应用的稳定性与性能。更多信息请参阅 Google 隐私政策。</p>
+
+    <h3>itch.io OAuth</h3>
+    <p>如果你使用 itch.io 登录，身份验证数据将由 itch.io 按照其隐私政策处理。</p>
+
+    <h3>Innersloth</h3>
+    <p>
+      星光与 Innersloth 的 Among Us 服务集成，以便你现有的 Among Us 账号、购买内容与进度可以在本应用中使用。
+      更多信息请参阅 Innersloth 的隐私政策。
+    </p>
+
+    <h3>第三方游戏服务器托管方</h3>
+    <p>
+      当你连接多人对局时，适用相应服务器运营方的隐私政策。本应用会将你的身份验证信息共享给这些服务器。
+      以下是我们默认包含的服务器运营方的隐私政策：
+    </p>
+    <ul>
+      <li>Innersloth</li>
+      <li>Miniduikboot</li>
+      <li>NikoCat233</li>
+    </ul>
+
+    <h2>6. 后端基础设施</h2>
+    <p>
+      内容分发由托管在<strong>美国 Hetzner</strong> 的后端服务器处理，
+      <strong>Cloudflare（美国东部）</strong>作为反向代理。
+      该后端不记录 IP 地址，且 IP 记录已在代理层关闭。
+    </p>
+
+    <h2>7. 跨境数据传输</h2>
+    <p>
+      由于本应用在全球范围内运营，个人数据可能在欧洲经济区（EEA）之外被处理。
+      在适用情况下，此类传输受适当保障措施保护，包括标准合同条款（SCC）。
+    </p>
+
+    <h2>8. 数据保留</h2>
+    <p>
+      我们仅在实现本政策所述目的所需的期限内保留个人数据。
+      由第三方服务处理的数据，其保留期限由各第三方的隐私政策规定。
+    </p>
+
+    <h2>9. 你的数据保护权利</h2>
+    <p>如果你位于欧洲经济区（EEA），你享有以下权利：</p>
+    <ul>
+      <li>访问你的个人数据</li>
+      <li>要求更正或删除</li>
+      <li>限制或反对处理</li>
+      <li>随时撤回同意</li>
+      <li>要求数据可携带</li>
+    </ul>
+    <p>你也有权向当地的数据保护监管机构提出投诉。</p>
+
+    <h2>10. 儿童隐私</h2>
+    <p>本应用面向 13 岁及以上用户，不面向 13 岁以下儿童。</p>
+    <p>
+      我们了解 Among Us 的玩家年龄跨度较大，尽管本应用有明确的目标受众，
+      13 岁以下儿童仍可能访问或使用本应用。
+    </p>
+    <p>
+      我们不会在知情的情况下收集 13 岁以下儿童的个人数据。如果我们发现已收集了 13 岁以下儿童的个人数据，
+      将采取合理措施尽快删除此类数据。
+    </p>
+    <p>家长或监护人如认为自己的孩子通过本应用提供了个人数据，可通过下方联系方式与我们联系。</p>
+
+    <h2>11. 政策变更</h2>
+    <p>我们可能不时更新本隐私政策。任何变更将在应用内或我们的网站上公布，并更新生效日期。</p>
+
+    <h2>12. 联系我们</h2>
+    <p>如对本隐私政策或你的数据保护权利有疑问，欢迎加入 QQ 群 <strong>451561679</strong> 与我们联系。</p>
+
+    <h2>附：关于本网站</h2>
+    <p>
+      上述内容适用于<strong>星光 App</strong>。本页面所在的网站是一个纯静态的介绍页，
+      托管在 GitHub Pages 上，不设账号、不使用 Cookie 或统计脚本，也不收集访客的个人信息。
+      与所有网站一样，托管方 GitHub 会在其服务器上记录访问日志（通常包含 IP 地址、请求时间、浏览器类型），
+      该部分数据适用 <a href="https://docs.github.com/zh/site-policy/privacy-policies/github-general-privacy-statement"
         target="_blank" rel="noopener">GitHub 隐私声明</a>，本站无法读取也无法删除。
     </p>
-
-    <h2>3. 下载与外部链接</h2>
     <p>
-      Android 安装包（APK）通过 <strong>GitHub Releases</strong> 提供，PC 版同样跳转 GitHub 下载。
-      点击下载按钮后你会离开本站，之后的访问与下载行为适用 GitHub 的服务条款与隐私政策。
-      本站不记录下载次数，也无法知道谁下载了什么。
-    </p>
-    <p>
-      页面中另有若干外部链接（如赞助页、国际版站点、北京服务器地址），它们各自有独立的隐私政策，
-      本站不对这些站点的做法负责。
-    </p>
-
-    <h2>4. QQ 群</h2>
-    <p>
-      本站提供社区 QQ 群的二维码与群号。扫码或搜索加群时，你使用的是腾讯 QQ 的服务，
-      相关数据处理适用腾讯的隐私政策。进群后你主动发送的群昵称、消息等内容，
-      群内成员（包括我们）可以看到；除此之外我们不会索取你的任何个人信息。
-    </p>
-
-    <h2>5. 字体文件</h2>
-    <p>
-      本站使用的 Lexend 字体已随站点一起托管，从本站域名直接加载。
-      页面不会向 Google Fonts 或其他字体服务发起请求，因此不会因此向第三方暴露你的 IP 地址。
-    </p>
-
-    <h2>6. 关于星光 App 本身</h2>
-    <p>
-      本政策仅适用于<strong>本站（网站）</strong>。星光 App 在设备上的数据处理方式，
-      以 App 内的说明为准。需要说明的是：App 使用你现有的 Among Us 账号登录，
-      不会另建账号，也不会看到或保存你的密码。
-    </p>
-
-    <h2>7. 未成年人</h2>
-    <p>
-      本站不面向 13 岁以下儿童，也不会主动收集任何人的个人信息。若你认为我们意外持有了未成年人的信息，
-      请通过下方方式联系我们，我们会尽快处理。
-    </p>
-
-    <h2>8. 政策变更</h2>
-    <p>
-      如果本站将来新增功能（例如评论区或访问统计），本政策会同步更新，并在此页顶部的"最后更新"日期体现。
-      重大变更会在首页公告中提示。
-    </p>
-
-    <h2>9. 联系我们</h2>
-    <p>
-      对本政策有疑问，欢迎加入 QQ 群 <strong>451561679</strong> 与我们联系。
+      本站的 Android 安装包通过 GitHub Releases 分发，点击下载后你将离开本站，适用 GitHub 的服务条款与隐私政策。
+      本站提供的 QQ 群二维码与邀请链接属于腾讯服务，加群及群内发言适用腾讯的隐私政策。
+      页面使用的 Lexend 字体随站点一起托管，不会向 Google Fonts 或其他字体服务发起请求。
     </p>
 
     <p class="updated" style="margin-top:2.5rem">
-      另见：<a href="https://allofus.dev/starlight/">星光·Starlight 国际版</a>
+      英文原版：<a href="https://allofus.dev/privacy-policy/">allofus.dev/privacy-policy</a>
     </p>
   </main>
 
