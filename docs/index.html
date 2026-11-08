@@ -1,227 +1,256 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>星光中国·Starlight - Among Us 模组启动器</title>
-<link rel="icon" type="image/png" href="favicon.png">
-<link rel="stylesheet" href="starlight.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>星光·Starlight — Among Us 跨平台模组管理器</title>
+  <meta name="description"
+    content="星光·Starlight 是免费的 Among Us 跨平台模组管理器，支持 Android 与 PC。安装、管理并畅玩社区模组。">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="starlight.css">
 </head>
+
 <body>
-<canvas id="stars-canvas"></canvas>
+  <canvas id="stars-canvas"></canvas>
 
-<header class="header">
+  <header class="header">
+    <div class="header-badges" aria-label="支持的平台">
+      <span class="platform-pill">Android</span>
+      <span class="platform-pill">PC • Windows</span>
+    </div>
     <h1>星光·Starlight</h1>
-    <p class="tagline">首个为 <em>Among Us</em> 打造的安卓模组启动器</p>
-</header>
+    <p class="tagline">为 <em>Among Us</em> 打造的跨平台模组管理器 —— 手机和电脑，一个应用</p>
+    <p class="header-sub">安装、管理并畅玩社区模组。</p>
+    <div class="header-cta">
+      <a href="#download" class="download-btn">获取星光</a>
+      <a href="#community" class="ghost-btn">加入 QQ 群</a>
+    </div>
+  </header>
 
-<main class="container">
+  <main class="container">
 
-    <div class="announcement announcement-info" role="status"><div class="announcement-icon">📢</div><div class="announcement-body">经过决定，我们把服务器迁到了免费的Github Pages，会由国内加速代理。<br />
-赞助我们：<a href="https://amongusclub.cn/archives/co-fi" target="_blank" rel="noopener">https://amongusclub.cn/archives/co-fi</a><br />
-同时我们继续提供免费游玩的北京Among Us服务器<br />
-网址：<a href="https://imp.amongusclub.cn" target="_blank" rel="noopener">https://imp.amongusclub.cn</a><br />
-端口：443<br />
-托管者：方块</div></div>
+    <div class="announcement announcement-info" role="status">
+      <div class="announcement-icon">📢</div>
+      <div class="announcement-body">经过决定，我们把服务器迁到了免费的Github Pages，会由国内加速代理。<br />
+        赞助我们：<a href="https://amongusclub.cn/archives/co-fi" target="_blank" rel="noopener">https://amongusclub.cn/archives/co-fi</a><br />
+        同时我们继续提供免费游玩的北京Among Us服务器<br />
+        网址：<a href="https://imp.amongusclub.cn" target="_blank" rel="noopener">https://imp.amongusclub.cn</a><br />
+        端口：443<br />
+        托管者：方块</div>
+    </div>
 
     <section class="intro">
-        <p>
-            <strong>星光·Starlight</strong> 将 <em>Among Us</em> 模组的世界带到你的手机。
-            在安卓上无缝安装、管理并畅玩模组 —— 没有麻烦，只有乐趣。
-        </p>
+      <p>
+        <strong>星光·Starlight</strong> 把 <em>Among Us</em> 模组的世界带到你的
+        <strong>手机和电脑</strong>。它是一套跨平台的模组管理器：无论你在哪玩，
+        都能浏览、安装并畅玩社区模组。
+      </p>
+      <p>
+        星光是配套工具，不替代官方游戏。游玩时使用你现有的 Among Us 账号登录，
+        你的购买内容、外观和进度与官方应用完全一致。星光不会为你另建账号，
+        也不会看到或保存你的密码。
+      </p>
     </section>
 
     <section class="features">
-        <h2>为什么选择Starlight？</h2>
-        <div class="feature-grid">
-            <div class="feature-card">
-                <h3>🚀 简单又快速</h3>
-                <p>只需轻点几下即可安装模组，无需技术知识。</p>
-            </div>
-            <div class="feature-card">
-                <h3>🌌 社区驱动</h3>
-                <p>时刻获取最新模组资讯，与其他玩家保持联系。</p>
-            </div>
-            <div class="feature-card">
-                <h3>🔒 安全可靠</h3>
-                <p>我们优先考虑你的安全，同时保持游戏流畅。</p>
-            </div>
+      <h2>为什么选择星光？</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>🔄 跨平台</h3>
+          <p>一套模组管理器，<strong>Android 与 PC</strong> 通用。在下方选择你的设备，Among Us 账号跟着你走。</p>
         </div>
+        <div class="feature-card">
+          <h3>🚀 简单又快速</h3>
+          <p>轻点几下就能安装模组，不需要任何技术知识。</p>
+        </div>
+        <div class="feature-card">
+          <h3>🌐 模组联机</h3>
+          <p>轻松连接自定义 Among Us 服务器，浏览正在活跃的模组房间。</p>
+        </div>
+      </div>
     </section>
 
-    <section class="download">
-        <h2>下载星光·Starlight</h2>
-        <p class="sub">立即获取最新版本：</p>
+    <section class="download" id="download">
+      <h2>获取星光</h2>
+      <p class="download-sub">免费的 <em>Among Us</em> 模组管理器 —— 选择你的平台。</p>
 
-        <div class="dl-list">
-            <div class="dl-item">
-                <div class="dl-info">
-                    <div class="dl-title">
-                        starlightapk
-                        <span class="version-badge">当前版本：<strong>2.2.1</strong></span>
-                    </div>
-                    <div class="dl-desc">下载Starlight APK，仅支持安卓</div>
-                    <div class="dl-meta">
-                        <span>大小：100.5 MB</span>
-                        <span>更新：2026-10-30</span>
-                    </div>
-                </div>
-                <a class="download-btn dl-trigger"
-                   href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-2210.apk">
-                    下载Starlight APK
-                </a>
-            </div>
-        </div>
+      <div class="platform-toggle" role="tablist" aria-label="选择你的平台">
+        <button type="button" id="tab-android" class="platform-tab" role="tab" aria-selected="true"
+          aria-controls="panel-android">📱 Android</button>
+        <button type="button" id="tab-pc" class="platform-tab" role="tab" aria-selected="false"
+          aria-controls="panel-pc">💻 PC</button>
+      </div>
 
-        <details class="dl-archive">
+      <div class="download-grid">
+        <article class="download-card" id="panel-android" role="tabpanel" aria-labelledby="tab-android"
+          data-platform="android">
+          <span class="recommended-badge" id="badge-android" hidden>✨ 推荐给你的设备</span>
+          <div class="download-icon" aria-hidden="true">📱</div>
+          <h3>星光 for Android</h3>
+          <p class="version-line">最新版本：<strong>v2.2.1</strong> • 需要 Android 设备与官方 Among Us</p>
+          <ul class="download-points">
+            <li>轻点几下即可安装与更新模组</li>
+            <li>自定义服务器与私人房间</li>
+            <li>新模组与更新推送提醒</li>
+          </ul>
+          <div class="download-actions">
+            <a class="download-btn"
+              href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-2210.apk"
+              target="_blank" rel="noopener">下载 APK</a>
+          </div>
+          <p class="download-note">直链始终是最新版 APK。</p>
+          <details class="dl-archive">
             <summary>历史版本（1.0.10 – 2.2.1）</summary>
             <div class="dl-archive-list">
-                <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-2210.apk"><span>2.2.1</span><em>100.5 MB</em></a>
-                <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-2200.apk"><span>2.2.0</span><em>100.5 MB</em></a>
-                <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-2110.apk"><span>2.1.1</span><em>100.4 MB</em></a>
-                <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-2100.apk"><span>2.1.0</span><em>100.4 MB</em></a>
-                <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-2000.apk"><span>2.0.0</span><em>99.9 MB</em></a>
-                <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-1630.apk"><span>1.6.3</span><em>108.2 MB</em></a>
-                <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-1620.apk"><span>1.6.2</span><em>107.2 MB</em></a>
-                <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-1610.apk"><span>1.6.1</span><em>104.3 MB</em></a>
-                <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-1600.apk"><span>1.6.0</span><em>104.3 MB</em></a>
-                <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-1010.apk"><span>1.0.10</span><em>90.2 MB</em></a>
+              <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-2210.apk"><span>2.2.1</span><em>100.5 MB</em></a>
+              <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-2200.apk"><span>2.2.0</span><em>100.5 MB</em></a>
+              <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-2110.apk"><span>2.1.1</span><em>100.4 MB</em></a>
+              <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-2100.apk"><span>2.1.0</span><em>100.4 MB</em></a>
+              <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-2000.apk"><span>2.0.0</span><em>99.9 MB</em></a>
+              <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-1630.apk"><span>1.6.3</span><em>108.2 MB</em></a>
+              <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-1620.apk"><span>1.6.2</span><em>107.2 MB</em></a>
+              <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-1610.apk"><span>1.6.1</span><em>104.3 MB</em></a>
+              <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-1600.apk"><span>1.6.0</span><em>104.3 MB</em></a>
+              <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-1010.apk"><span>1.0.10</span><em>90.2 MB</em></a>
             </div>
-        </details>
+          </details>
+        </article>
+
+        <article class="download-card" id="panel-pc" role="tabpanel" aria-labelledby="tab-pc" data-platform="pc">
+          <span class="recommended-badge" id="badge-pc" hidden>✨ 推荐给你的设备</span>
+          <div class="download-icon" aria-hidden="true">💻</div>
+          <h3>星光 for PC</h3>
+          <p class="version-line">适用于 Windows • 在 GitHub 获取最新版本</p>
+          <ul class="download-points">
+            <li>与 Android 相同的模组目录</li>
+            <li>桌面端安装与管理更顺手</li>
+            <li>兼容你现有的 Among Us 账号</li>
+          </ul>
+          <div class="download-actions">
+            <a class="download-btn" href="https://github.com/All-Of-Us-Mods/Starlight-PC/releases" target="_blank"
+              rel="noopener">在 GitHub 下载 PC 版</a>
+          </div>
+          <p class="download-note">会跳转到 GitHub Releases，选最新的安装包（<code>.exe</code>）。</p>
+        </article>
+      </div>
     </section>
-</main>
 
-<footer class="footer">
-    <p>&copy; 2026 星光·Starlight &bull; <a href="https://allofus.dev/starlight/">返回 All Of Us Mods 国际主页</a></p>
-</footer>
+    <section class="community" id="community">
+      <h2>加入我们的社区</h2>
+      <p class="community-sub">有问题？想提模组需求？扫码进群，Android 和 PC 玩家都在。</p>
+      <a class="community-qr" href="https://qm.qq.com/q/2ZgZoEK5sY" target="_blank" rel="noopener" aria-label="点击链接加入群聊：AllOfUs &amp; Starlight · 中国">
+        <img src="qq-group.jpg" width="800" height="1010" alt="星光·Starlight QQ 群二维码，群号 451561679" loading="lazy">
+      </a>
+      <p class="community-hint">QQ 群号：<strong>451561679</strong> · <a href="https://qm.qq.com/q/2ZgZoEK5sY" target="_blank" rel="noopener">点击链接加入群聊</a></p>
+    </section>
+  </main>
 
-<!-- ===== 下载赞助弹窗 ===== -->
-<div class="dl-modal-overlay" id="dl-modal" role="dialog" aria-modal="true" aria-labelledby="dl-modal-title">
-    <div class="dl-modal">
-        <div class="dl-modal-head">
-            <span class="dl-modal-icon">❤️</span>
-            <strong id="dl-modal-title">支持星光 · Starlight</strong>
-        </div>
-        <div class="dl-modal-body">
-            <p>我们是全球首个提供 <strong>Starlight 国内不限速不限量下载链接</strong>的网站。</p>
-            <p>为了维持服务的稳定和持续运行，希望您能贡献一份微薄之力！</p>
-            <p class="dl-modal-sponsor">
-                👉 <a href="https://amongusclub.cn/archives/co-fi"
-                      target="_blank" rel="noopener">赞助我们</a>
-            </p>
-            <p class="dl-modal-bless">每一分每一毛赞助都会成为我们稳定前行的动力！</p>
-        </div>
-        <div class="dl-modal-actions">
-            <button type="button" class="dl-modal-btn primary" id="dl-modal-continue">
-                ✓ 继续下载
-            </button>
-            <a class="dl-modal-btn sponsor"
-               href="https://amongusclub.cn/archives/co-fi"
-               target="_blank" rel="noopener" id="dl-modal-sponsor">
-                ❤ 赞助我们
-            </a>
-        </div>
-    </div>
-</div>
+  <footer class="footer">
+    <p>
+      © 2026 星光·Starlight • 为 Among Us 打造的跨平台模组管理器（Android &amp; PC）•
+      <a href="https://allofus.dev/starlight/">国际版</a> •
+      <a href="privacy-policy.html">隐私政策</a>
+    </p>
+  </footer>
 
-<script>
-/* ===== 星空背景动画 ===== */
-(function () {
-    var canvas = document.getElementById('stars-canvas');
-    var ctx = canvas.getContext('2d');
-    var stars = [];
-    var N = 180;
-    function resize() {
+  <script>
+    /* ===== 星空背景动画 ===== */
+    (function () {
+      var canvas = document.getElementById('stars-canvas');
+      var ctx = canvas.getContext('2d');
+      var stars = [];
+      var N = 180;
+      function resize() {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
-    }
-    for (var i = 0; i < N; i++) {
+      }
+      for (var i = 0; i < N; i++) {
         stars.push({
-            x: Math.random(), y: Math.random(),
-            r: Math.random() * 1.3 + 0.2,
-            speed: Math.random() * 0.00008 + 0.00002,
-            base: Math.random() * 0.5 + 0.3,
-            phase: Math.random() * Math.PI * 2
+          x: Math.random(), y: Math.random(),
+          r: Math.random() * 1.3 + 0.2,
+          speed: Math.random() * 0.00008 + 0.00002,
+          base: Math.random() * 0.5 + 0.3,
+          phase: Math.random() * Math.PI * 2
         });
-    }
-    var t = 0;
-    function draw() {
+      }
+      var t = 0;
+      function draw() {
         t += 0.02;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         for (var j = 0; j < stars.length; j++) {
-            var s = stars[j];
-            var opacity = s.base + 0.25 * Math.sin(t + s.phase);
-            ctx.beginPath();
-            ctx.arc(s.x * canvas.width, s.y * canvas.height, s.r, 0, Math.PI * 2);
-            ctx.fillStyle = 'rgba(255,255,255,' + opacity + ')';
-            ctx.fill();
-            s.y += s.speed;
-            if (s.y > 1) { s.y = 0; s.x = Math.random(); }
+          var s = stars[j];
+          var opacity = s.base + 0.25 * Math.sin(t + s.phase);
+          ctx.beginPath();
+          ctx.arc(s.x * canvas.width, s.y * canvas.height, s.r, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(255,255,255,' + opacity + ')';
+          ctx.fill();
+          s.y += s.speed;
+          if (s.y > 1) { s.y = 0; s.x = Math.random(); }
         }
         requestAnimationFrame(draw);
-    }
-    resize();
-    window.addEventListener('resize', resize);
-    draw();
-})();
+      }
+      resize();
+      window.addEventListener('resize', resize);
+      draw();
+    })();
 
-/* ===== 下载前弹窗提示赞助 ===== */
-(function () {
-    var modal      = document.getElementById('dl-modal');
-    var continueBtn= document.getElementById('dl-modal-continue');
-    var sponsorBtn = document.getElementById('dl-modal-sponsor');
-    var pending    = null;
+    /* ===== 平台切换 ===== */
+    (function () {
+      var ua = (navigator.userAgent || "").toLowerCase();
+      var platform = (navigator.userAgentData && navigator.userAgentData.platform
+        ? String(navigator.userAgentData.platform)
+        : (navigator.platform || "")).toLowerCase();
+      var maxTouch = navigator.maxTouchPoints || 0;
 
-    function openModal(url, newTab) {
-        pending = { url: url, newTab: newTab };
-        modal.classList.add('show');
-        document.body.style.overflow = 'hidden';
-    }
-    function closeModal() {
-        modal.classList.remove('show');
-        document.body.style.overflow = '';
-        pending = null;
-    }
-    function triggerDownload(url, newTab) {
-        var a = document.createElement('a');
-        a.href = url;
-        a.dataset.skipConfirm = '1';
-        if (newTab) a.target = '_blank';
-        a.rel = 'noopener';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-    }
-    document.addEventListener('click', function (e) {
-        if (e.ctrlKey || e.metaKey || e.shiftKey || e.button !== 0) return;
-        var a = e.target.closest('a[href*="/releases/download/"]');
-        if (!a) return;
-        if (a.dataset.skipConfirm === '1') return;
-        if (a.classList.contains('skip-confirm')) return;
-        e.preventDefault();
-        openModal(a.href, a.target === '_blank');
-    });
-    continueBtn.addEventListener('click', function () {
-        if (!pending) { closeModal(); return; }
-        var url = pending.url, newTab = pending.newTab;
-        closeModal();
-        triggerDownload(url, newTab);
-    });
-    sponsorBtn.addEventListener('click', function () {
-        if (!pending) { closeModal(); return; }
-        var url = pending.url, newTab = pending.newTab;
-        setTimeout(function () {
-            closeModal();
-            triggerDownload(url, newTab);
-        }, 120);
-    });
-    modal.addEventListener('click', function (e) {
-        if (e.target === modal) closeModal();
-    });
-    document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && modal.classList.contains('show')) closeModal();
-    });
-})();
-</script>
+      function isAndroid() { return ua.indexOf("android") !== -1; }
+      function isMobileApple() {
+        return /iphone|ipad|ipod/.test(ua) ||
+          ((platform.indexOf("mac") !== -1 || ua.indexOf("macintosh") !== -1) && maxTouch > 1);
+      }
+      function isDesktop() {
+        return /windows|macintosh|mac os|cros|linux|x11/.test(ua + " " + platform) && !isAndroid() && !isMobileApple();
+      }
+
+      // 手机默认 Android，桌面默认 PC；也支持 ?platform=android|pc 强制指定
+      var detected = isAndroid() ? "android" : (isDesktop() ? "pc" : "android");
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var forced = (params.get("platform") || "").toLowerCase();
+        if (forced === "android" || forced === "pc") detected = forced;
+      } catch (e) { /* ignore */ }
+
+      var cards = {
+        android: document.getElementById("panel-android"),
+        pc: document.getElementById("panel-pc")
+      };
+      var tabs = {
+        android: document.getElementById("tab-android"),
+        pc: document.getElementById("tab-pc")
+      };
+      var badges = {
+        android: document.getElementById("badge-android"),
+        pc: document.getElementById("badge-pc")
+      };
+
+      function setActive(which) {
+        ["android", "pc"].forEach(function (key) {
+          var isActive = key === which;
+          if (cards[key]) cards[key].classList.toggle("active", isActive);
+          if (tabs[key]) {
+            tabs[key].classList.toggle("active", isActive);
+            tabs[key].setAttribute("aria-selected", isActive ? "true" : "false");
+          }
+          if (badges[key]) badges[key].hidden = !isActive;
+        });
+      }
+
+      if (tabs.android) tabs.android.addEventListener("click", function () { setActive("android"); });
+      if (tabs.pc) tabs.pc.addEventListener("click", function () { setActive("pc"); });
+
+      setActive(detected);
+    })();
+  </script>
 </body>
+
 </html>
