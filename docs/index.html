@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>星光中国·Starlight - Among Us 模组启动器</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="starlight.css">
+</head>
+<body>
+<canvas id="stars-canvas"></canvas>
+
+<header class="header">
+    <h1>星光·Starlight</h1>
+    <p class="tagline">首个为 <em>Among Us</em> 打造的安卓模组启动器</p>
+</header>
+
+<main class="container">
+
+    <div class="announcement announcement-info" role="status"><div class="announcement-icon">📢</div><div class="announcement-body">你们赞助一下我们吧<br />
+两天 服务器被你们跑死五次<br />
+我到现在一分钱赞助都没有<br />
+再过几个月到期了我直接跑<br />
+<br />
+赞助我们：<a href="https://amongusclub.cn/archives/co-fi" target="_blank" rel="noopener">https://amongusclub.cn/archives/co-fi</a><br />
+<br />
+同时我们提供免费有玩的北京Among Us服务器<br />
+名字：方块北京<br />
+IP：<a href="https://imp.amongusclub.cn" target="_blank" rel="noopener">https://imp.amongusclub.cn</a><br />
+端口：443<br />
+托管者：方块</div></div>
+
+    <!-- ===== 公益寻人启事 ===== -->
+    <div class="missing-people-section">
+        <div class="missing-people-head">
+            <div class="missing-people-label">
+                <span class="missing-people-heart">❤️</span>
+                公益寻人 · 让爱回家
+            </div>
+            <button type="button" class="missing-refresh-btn" id="missing-refresh">
+                <span class="icon">🔄</span>
+                <span>换一批</span>
+            </button>
+        </div>
+        <div class="missing-people-grid" id="missing-grid">
+            <a class="missing-person-card" href="https://so.baobeihuijia.com/bbhj/search.html?keyword=91650"
+               target="_blank" rel="noopener" data-id="91650">
+                <div class="person-cat">家寻宝贝</div>
+                <div class="person-name">罗长娃（照片是母亲）</div>
+                <div class="person-rows">
+                    <div class="person-row"><span>性别</span><strong>男</strong></div>
+                    <div class="person-row"><span>出生</span><strong>1987-06-03</strong></div>
+                    <div class="person-row"><span>失踪</span><strong>1993-12-17</strong></div>
+                    <div class="person-row"><span>身高</span><strong>95CM</strong></div>
+                </div>
+                <div class="person-desc">被拐人不知是左眉毛还是右眉毛的眉毛中间有到疤痕印记号，背〈两肋骨之间〉的中心有个〈漩〉胎记，说话有点大舌头。</div>
+                <div class="person-id">编号：91650</div>
+            </a>
+            <a class="missing-person-card" href="https://so.baobeihuijia.com/bbhj/search.html?keyword=593234"
+               target="_blank" rel="noopener" data-id="593234">
+                <div class="person-cat">家寻宝贝</div>
+                <div class="person-name">李道信（送养）</div>
+                <div class="person-rows">
+                    <div class="person-row"><span>性别</span><strong>男</strong></div>
+                    <div class="person-row"><span>出生</span><strong>1961-06-24</strong></div>
+                    <div class="person-row"><span>失踪</span><strong>1961-09-28</strong></div>
+                    <div class="person-row"><span>身高</span><strong>未知CM</strong></div>
+                </div>
+                <div class="person-desc">不到一岁，耳朵长有栓马桩，爷爷过世，奶奶大饥荒年养不活，没办法想送去江西，江西没法进，故送到株洲火车站，被一穿车站制服人抱走。</div>
+                <div class="person-id">编号：593234</div>
+            </a>
+            <a class="missing-person-card" href="https://so.baobeihuijia.com/bbhj/search.html?keyword=12640"
+               target="_blank" rel="noopener" data-id="12640">
+                <div class="person-cat">家寻宝贝</div>
+                <div class="person-name">尹蓉</div>
+                <div class="person-rows">
+                    <div class="person-row"><span>性别</span><strong>女</strong></div>
+                    <div class="person-row"><span>出生</span><strong>2006-10-16</strong></div>
+                    <div class="person-row"><span>失踪</span><strong>2008-01-20</strong></div>
+                    <div class="person-row"><span>身高</span><strong>未知CM</strong></div>
+                </div>
+                <div class="person-desc">失踪时一岁零三个月，刚会走路说话。圆脸，短发，头顶一个旋，单眼皮，皮肤白。失踪当天上午十点左右在家门口被人抱走。</div>
+                <div class="person-id">编号：12640</div>
+            </a>
+            <a class="missing-person-card" href="https://so.baobeihuijia.com/bbhj/search.html?keyword=219294"
+               target="_blank" rel="noopener" data-id="219294">
+                <div class="person-cat">家寻宝贝</div>
+                <div class="person-name">官黎阳（送养）</div>
+                <div class="person-rows">
+                    <div class="person-row"><span>性别</span><strong>女</strong></div>
+                    <div class="person-row"><span>出生</span><strong>1999-07-12</strong></div>
+                    <div class="person-row"><span>失踪</span><strong>2000-06-29</strong></div>
+                    <div class="person-row"><span>身高</span><strong>80CM</strong></div>
+                </div>
+                <div class="person-desc">当时因家庭原因被送养，中间人姓官，据说送往福建泉州一带，此后失去联系。</div>
+                <div class="person-id">编号：219294</div>
+            </a>
+            <a class="missing-person-card" href="https://so.baobeihuijia.com/bbhj/search.html?keyword=163959"
+               target="_blank" rel="noopener" data-id="163959">
+                <div class="person-cat">家寻宝贝</div>
+                <div class="person-name">李XX（送养）</div>
+                <div class="person-rows">
+                    <div class="person-row"><span>性别</span><strong>男</strong></div>
+                    <div class="person-row"><span>出生</span><strong>1991-06-22</strong></div>
+                    <div class="person-row"><span>失踪</span><strong>1991-06-26</strong></div>
+                    <div class="person-row"><span>身高</span><strong>未知CM</strong></div>
+                </div>
+                <div class="person-desc">男孩，当时生下第四，五天时，抱养给一个河北赵县的30岁左右的男子，这名男子也姓赵，当时留了地址，后来地址丢失了。</div>
+                <div class="person-id">编号：163959</div>
+            </a>
+            <a class="missing-person-card" href="https://so.baobeihuijia.com/bbhj/search.html?keyword=180066"
+               target="_blank" rel="noopener" data-id="180066">
+                <div class="person-cat">家寻宝贝</div>
+                <div class="person-name">王希兰（遗弃）</div>
+                <div class="person-rows">
+                    <div class="person-row"><span>性别</span><strong>女</strong></div>
+                    <div class="person-row"><span>出生</span><strong>1957-04-13</strong></div>
+                    <div class="person-row"><span>失踪</span><strong>1961-04-13</strong></div>
+                    <div class="person-row"><span>身高</span><strong>未知CM</strong></div>
+                </div>
+                <div class="person-desc">丢弃的时候已经4岁了，记事了，那时候粮食过关，没有吃的，自己要求丢弃。老家是农村的，在肥西。</div>
+                <div class="person-id">编号：180066</div>
+            </a>
+        </div>
+        <div class="missing-people-tip">
+            🔍 点击卡片可前往「宝贝回家」搜索该编号查看更多信息
+        </div>
+    </div>
+    <!-- ===== /公益寻人启事 ===== -->
+
+    <section class="intro">
+        <p>
+            <strong>星光·Starlight</strong> 将 <em>Among Us</em> 模组的世界带到你的手机。
+            在安卓上无缝安装、管理并畅玩模组 —— 没有麻烦，只有乐趣。
+        </p>
+    </section>
+
+    <section class="features">
+        <h2>为什么选择Starlight？</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>🚀 简单又快速</h3>
+                <p>只需轻点几下即可安装模组，无需技术知识。</p>
+            </div>
+            <div class="feature-card">
+                <h3>🌌 社区驱动</h3>
+                <p>时刻获取最新模组资讯，与其他玩家保持联系。</p>
+            </div>
+            <div class="feature-card">
+                <h3>🔒 安全可靠</h3>
+                <p>我们优先考虑你的安全，同时保持游戏流畅。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="download">
+        <h2>下载星光·Starlight</h2>
+        <p class="sub">立即获取最新版本：</p>
+
+        <div class="dl-list">
+            <div class="dl-item">
+                <div class="dl-info">
+                    <div class="dl-title">
+                        starlightapk
+                        <span class="version-badge">当前版本：<strong>2.2.1</strong></span>
+                    </div>
+                    <div class="dl-desc">下载Starlight APK，仅支持安卓</div>
+                    <div class="dl-meta">
+                        <span>大小：100.5 MB</span>
+                        <span>更新：2026-10-30</span>
+                    </div>
+                </div>
+                <a class="download-btn dl-trigger"
+                   href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-2210.apk">
+                    下载Starlight APK
+                </a>
+            </div>
+        </div>
+
+        <details class="dl-archive">
+            <summary>历史版本（1.0.10 – 2.2.1）</summary>
+            <div class="dl-archive-list">
+                <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-2210.apk"><span>2.2.1</span><em>100.5 MB</em></a>
+                <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-2200.apk"><span>2.2.0</span><em>100.5 MB</em></a>
+                <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-2110.apk"><span>2.1.1</span><em>100.4 MB</em></a>
+                <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-2100.apk"><span>2.1.0</span><em>100.4 MB</em></a>
+                <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-2000.apk"><span>2.0.0</span><em>99.9 MB</em></a>
+                <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-1630.apk"><span>1.6.3</span><em>108.2 MB</em></a>
+                <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-1620.apk"><span>1.6.2</span><em>107.2 MB</em></a>
+                <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-1610.apk"><span>1.6.1</span><em>104.3 MB</em></a>
+                <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-1600.apk"><span>1.6.0</span><em>104.3 MB</em></a>
+                <a class="dl-archive-item" href="https://github.com/BunchHanpiDev/Starlight_CN/releases/download/apks/starlight-1010.apk"><span>1.0.10</span><em>90.2 MB</em></a>
+            </div>
+        </details>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 星光·Starlight &bull; <a href="/index.html">返回 All Of Us Mods 国际主页</a></p>
+</footer>
+
+<!-- ===== 下载赞助弹窗 ===== -->
+<div class="dl-modal-overlay" id="dl-modal" role="dialog" aria-modal="true" aria-labelledby="dl-modal-title">
+    <div class="dl-modal">
+        <div class="dl-modal-head">
+            <span class="dl-modal-icon">❤️</span>
+            <strong id="dl-modal-title">支持星光 · Starlight</strong>
+        </div>
+        <div class="dl-modal-body">
+            <p>我们是全球首个提供 <strong>Starlight 国内不限速不限量下载链接</strong>的网站。</p>
+            <p>为了维持服务的稳定和持续运行，希望您能贡献一份微薄之力！</p>
+            <p class="dl-modal-sponsor">
+                👉 <a href="https://amongusclub.cn/archives/co-fi"
+                      target="_blank" rel="noopener">赞助我们</a>
+            </p>
+            <p class="dl-modal-bless">每一分每一毛赞助都会成为我们稳定前行的动力！</p>
+        </div>
+        <div class="dl-modal-actions">
+            <button type="button" class="dl-modal-btn primary" id="dl-modal-continue">
+                ✓ 继续下载
+            </button>
+            <a class="dl-modal-btn sponsor"
+               href="https://amongusclub.cn/archives/co-fi"
+               target="_blank" rel="noopener" id="dl-modal-sponsor">
+                ❤ 赞助我们
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+/* ===== 星空背景动画 ===== */
+(function () {
+    var canvas = document.getElementById('stars-canvas');
+    var ctx = canvas.getContext('2d');
+    var stars = [];
+    var N = 180;
+    function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    for (var i = 0; i < N; i++) {
+        stars.push({
+            x: Math.random(), y: Math.random(),
+            r: Math.random() * 1.3 + 0.2,
+            speed: Math.random() * 0.00008 + 0.00002,
+            base: Math.random() * 0.5 + 0.3,
+            phase: Math.random() * Math.PI * 2
+        });
+    }
+    var t = 0;
+    function draw() {
+        t += 0.02;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (var j = 0; j < stars.length; j++) {
+            var s = stars[j];
+            var opacity = s.base + 0.25 * Math.sin(t + s.phase);
+            ctx.beginPath();
+            ctx.arc(s.x * canvas.width, s.y * canvas.height, s.r, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(255,255,255,' + opacity + ')';
+            ctx.fill();
+            s.y += s.speed;
+            if (s.y > 1) { s.y = 0; s.x = Math.random(); }
+        }
+        requestAnimationFrame(draw);
+    }
+    resize();
+    window.addEventListener('resize', resize);
+    draw();
+})();
+
+/* ===== 下载前弹窗提示赞助 ===== */
+(function () {
+    var modal      = document.getElementById('dl-modal');
+    var continueBtn= document.getElementById('dl-modal-continue');
+    var sponsorBtn = document.getElementById('dl-modal-sponsor');
+    var pending    = null;
+
+    function openModal(url, newTab) {
+        pending = { url: url, newTab: newTab };
+        modal.classList.add('show');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeModal() {
+        modal.classList.remove('show');
+        document.body.style.overflow = '';
+        pending = null;
+    }
+    function triggerDownload(url, newTab) {
+        var a = document.createElement('a');
+        a.href = url;
+        a.dataset.skipConfirm = '1';
+        if (newTab) a.target = '_blank';
+        a.rel = 'noopener';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
+    document.addEventListener('click', function (e) {
+        if (e.ctrlKey || e.metaKey || e.shiftKey || e.button !== 0) return;
+        var a = e.target.closest('a[href*="/releases/download/"]');
+        if (!a) return;
+        if (a.dataset.skipConfirm === '1') return;
+        if (a.classList.contains('skip-confirm')) return;
+        e.preventDefault();
+        openModal(a.href, a.target === '_blank');
+    });
+    continueBtn.addEventListener('click', function () {
+        if (!pending) { closeModal(); return; }
+        var url = pending.url, newTab = pending.newTab;
+        closeModal();
+        triggerDownload(url, newTab);
+    });
+    sponsorBtn.addEventListener('click', function () {
+        if (!pending) { closeModal(); return; }
+        var url = pending.url, newTab = pending.newTab;
+        setTimeout(function () {
+            closeModal();
+            triggerDownload(url, newTab);
+        }, 120);
+    });
+    modal.addEventListener('click', function (e) {
+        if (e.target === modal) closeModal();
+    });
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && modal.classList.contains('show')) closeModal();
+    });
+})();
+
+/* ===== 寻人启事「换一批」 ===== */
+(function () {
+    var grid = document.getElementById('missing-grid');
+    var btn  = document.getElementById('missing-refresh');
+    if (!grid || !btn) return;
+
+    var pool = null;
+
+    function esc(s) {
+        return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+            return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
+        });
+    }
+    function truncate(s, n) {
+        s = String(s == null ? '' : s);
+        return s.length > n ? s.slice(0, n) + '…' : s;
+    }
+    function shuffle(arr) {
+        var a = arr.slice(), n = a.length, i, j, tmp;
+        for (i = n - 1; i > 0; i--) {
+            j = Math.floor(Math.random() * (i + 1));
+            tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+        }
+        return a;
+    }
+
+    function render(people) {
+        var html = '';
+        people.forEach(function (p) {
+            var pid  = p['寻亲编号'] || '';
+            var link = pid
+                ? 'https://so.baobeihuijia.com/bbhj/search.html?keyword=' + encodeURIComponent(pid)
+                : 'https://www.baobeihuijia.com/';
+
+            html += '<a class="missing-person-card" href="' + esc(link) + '" target="_blank" rel="noopener" data-id="' + esc(pid) + '">';
+            html += '<div class="person-cat">' + esc(p['寻亲类别'] || '寻人') + '</div>';
+            html += '<div class="person-name">' + esc(p['姓名'] || '不详') + '</div>';
+            html += '<div class="person-rows">';
+            html += '<div class="person-row"><span>性别</span><strong>' + esc(p['性别'] || '未知') + '</strong></div>';
+            html += '<div class="person-row"><span>出生</span><strong>' + esc(p['出生日期'] || '未知') + '</strong></div>';
+            html += '<div class="person-row"><span>失踪</span><strong>' + esc(p['失踪时间'] || '未知') + '</strong></div>';
+            html += '<div class="person-row"><span>身高</span><strong>' + esc(p['失踪时身高'] || '未知') + '</strong></div>';
+            html += '</div>';
+            if (p['失踪者特征描述']) {
+                html += '<div class="person-desc">' + esc(truncate(p['失踪者特征描述'], 60)) + '</div>';
+            }
+            html += '<div class="person-id">编号：' + esc(pid) + '</div>';
+            html += '</a>';
+        });
+        grid.innerHTML = html;
+    }
+
+    function currentIds() {
+        var ids = [];
+        grid.querySelectorAll('.missing-person-card').forEach(function (c) {
+            if (c.dataset.id) ids.push(c.dataset.id);
+        });
+        return ids;
+    }
+
+    function pick() {
+        var shown = currentIds();
+        var rest = pool.filter(function (p) {
+            return shown.indexOf(String(p['寻亲编号'])) === -1;
+        });
+        if (rest.length < 6) rest = pool;
+        return shuffle(rest).slice(0, 6);
+    }
+
+    function loadPool() {
+        if (pool) return Promise.resolve(pool);
+        return fetch('missing-data.json', { cache: 'no-cache' })
+            .then(function (r) {
+                if (!r.ok) throw new Error('HTTP ' + r.status);
+                return r.json();
+            })
+            .then(function (data) {
+                pool = Array.isArray(data) ? data : [];
+                return pool;
+            });
+    }
+
+    btn.addEventListener('click', function () {
+        if (btn.disabled) return;
+        btn.disabled = true;
+
+        loadPool()
+            .then(function (data) {
+                if (!data.length) throw new Error('暂无数据');
+                render(pick());
+            })
+            .catch(function (e) {
+                alert('换一批失败：' + e.message);
+            })
+            .finally(function () {
+                btn.disabled = false;
+            });
+    });
+})();
+</script>
+</body>
+</html>
